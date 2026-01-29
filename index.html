@@ -1,0 +1,211 @@
+<section class="ar-store" dir="rtl" lang="ar">
+  <style>
+    .ar-store{font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial; color:#111}
+    .ar-container{max-width:1100px;margin:0 auto;padding:18px}
+    .ar-hero{
+      border-radius:18px; overflow:hidden; position:relative;
+      background:#0f2b3a; min-height:320px;
+      display:flex; align-items:center;
+    }
+    .ar-hero img{width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:.95}
+    .ar-hero::after{content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(0,0,0,.55), rgba(0,0,0,.15));}
+    .ar-hero-inner{position:relative; z-index:1; padding:26px; max-width:620px}
+    .ar-badge{letter-spacing:.8px; font-weight:700; color:#fff; opacity:.9}
+    .ar-title{margin:10px 0 14px; font-size:34px; line-height:1.2; color:#fff}
+    .ar-btn{
+      display:inline-block; background:#fff; color:#111; text-decoration:none;
+      padding:10px 16px; border-radius:999px; font-weight:700;
+    }
+
+    .ar-section-title{margin:24px 0 12px; font-size:18px; color:#333; text-align:center}
+    .ar-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:14px}
+    .ar-card{
+      border:1px solid #eee; border-radius:14px; overflow:hidden; background:#fff;
+      transition:transform .15s ease, box-shadow .15s ease;
+    }
+    .ar-card:hover{transform:translateY(-2px); box-shadow:0 8px 22px rgba(0,0,0,.08)}
+    .ar-thumb{background:#fafafa; aspect-ratio:1/1; display:flex; align-items:center; justify-content:center}
+    .ar-thumb img{width:100%; height:100%; object-fit:contain}
+    .ar-card-body{padding:12px}
+    .ar-name{margin:0 0 8px; font-size:14px; color:#111}
+    .ar-price{margin:0; font-weight:800}
+    .ar-old{font-weight:600; color:#888; text-decoration:line-through; margin-inline-start:8px}
+    .ar-pill{
+      position:absolute; top:10px; inset-inline-end:10px;
+      background:#f6c343; color:#111; font-weight:800; font-size:12px;
+      padding:6px 10px; border-radius:999px;
+    }
+    .ar-thumb-wrap{position:relative}
+
+    .ar-delivery{
+      margin:26px auto 10px; max-width:760px; text-align:center;
+      padding:18px; border-radius:16px; background:#f6f7f9; color:#333;
+    }
+    .ar-delivery h3{margin:0 0 8px; font-size:14px; letter-spacing:.8px; color:#666}
+
+    .ar-form-wrap{
+      margin:30px auto 10px; max-width:760px;
+      padding:18px; border-radius:18px; background:#0f2b3a; color:#fff;
+    }
+    .ar-form-wrap h2{margin:0 0 6px; font-size:22px}
+    .ar-form-wrap p{margin:0 0 14px; opacity:.9}
+    .ar-form{display:grid; grid-template-columns:repeat(2,1fr); gap:12px}
+    .ar-field{display:flex; flex-direction:column; gap:6px}
+    .ar-field label{font-size:13px; opacity:.95}
+    .ar-field input{
+      border:0; outline:none; padding:12px 12px; border-radius:12px;
+      font-size:14px;
+    }
+    .ar-form .full{grid-column:1 / -1}
+    .ar-submit{
+      border:0; cursor:pointer; border-radius:999px;
+      padding:12px 16px; font-weight:900;
+      background:#fff; color:#111;
+      justify-self:start;
+    }
+    .ar-status{grid-column:1 / -1; font-size:13px; opacity:.95}
+
+    @media (max-width: 900px){
+      .ar-grid{grid-template-columns:repeat(2,1fr)}
+      .ar-title{font-size:26px}
+    }
+    @media (max-width: 520px){
+      .ar-form{grid-template-columns:1fr}
+      .ar-submit{width:100%; text-align:center}
+    }
+  </style>
+
+  <div class="ar-container">
+    <!-- HERO -->
+    <div class="ar-hero">
+      <img src="https://cdn.files.salla.network/homepage/324744219/6f2276a2-01bd-4a17-9fba-38d2296067ff.webp" alt="صورة الهيرو" loading="lazy">
+      <div class="ar-hero-inner">
+        <div class="ar-badge">متجر</div>
+        <h1 class="ar-title">مجموعة جديدة داخل المتجر</h1>
+        <a class="ar-btn" href="#products">تسوق الآن</a>
+      </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div id="products" class="ar-section-title">اكسسوارات ومنتجات مختارة</div>
+    <div class="ar-grid">
+      <!-- كرر/عدل البطاقات حسب منتجاتك -->
+      <article class="ar-card">
+        <div class="ar-thumb-wrap ar-thumb">
+          <span class="ar-pill">خصم</span>
+          <img src="https://serfel.net/cdn/shop/files/30_57c3c621-f105-4244-a31e-870b0be2df1d.png?v=1769520678&width=990" alt="منتج 1" loading="lazy">
+        </div>
+        <div class="ar-card-body">
+          <p class="ar-name">منتج تجريبي 1</p>
+          <p class="ar-price">79 ر.س <span class="ar-old">92 ر.س</span></p>
+        </div>
+      </article>
+
+      <article class="ar-card">
+        <div class="ar-thumb">
+          <img src="https://serfel.net/cdn/shop/files/30_57c3c621-f105-4244-a31e-870b0be2df1d.png?v=1769520678&width=990" alt="منتج 2" loading="lazy">
+        </div>
+        <div class="ar-card-body">
+          <p class="ar-name">منتج تجريبي 2</p>
+          <p class="ar-price">47 ر.س</p>
+        </div>
+      </article>
+
+      <article class="ar-card">
+        <div class="ar-thumb">
+          <img src="https://serfel.net/cdn/shop/files/30_57c3c621-f105-4244-a31e-870b0be2df1d.png?v=1769520678&width=990" alt="منتج 3" loading="lazy">
+        </div>
+        <div class="ar-card-body">
+          <p class="ar-name">منتج تجريبي 3</p>
+          <p class="ar-price">21 ر.س</p>
+        </div>
+      </article>
+
+      <article class="ar-card">
+        <div class="ar-thumb">
+          <img src="https://serfel.net/cdn/shop/files/30_57c3c621-f105-4244-a31e-870b0be2df1d.png?v=1769520678&width=990" alt="منتج 4" loading="lazy">
+        </div>
+        <div class="ar-card-body">
+          <p class="ar-name">منتج تجريبي 4</p>
+          <p class="ar-price">13 ر.س</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- DELIVERY (اختياري ومختصر) -->
+    <div class="ar-delivery">
+      <h3>عن التوصيل</h3>
+      <div>استلام من المستودع (حسب السياسة) أو شحن للمدن المتاحة. تواصل معنا لمعرفة التفاصيل.</div>
+    </div>
+
+    <!-- FORM -->
+    <div class="ar-form-wrap" id="lead-form">
+      <h2>سجل بياناتك</h2>
+      <p>اترك بياناتك وسنتواصل معك بأقرب وقت.</p>
+
+      <form class="ar-form" id="arLeadForm">
+        <div class="ar-field">
+          <label>الاسم</label>
+          <input name="name" type="text" required placeholder="اكتب اسمك">
+        </div>
+
+        <div class="ar-field">
+          <label>التلفون</label>
+          <input name="phone" type="text" placeholder="مثال: 011xxxxxxx">
+        </div>
+
+        <div class="ar-field">
+          <label>رقم الجوال</label>
+          <input name="mobile" type="text" required placeholder="مثال: 05xxxxxxxx">
+        </div>
+
+        <div class="ar-field">
+          <label>المدينة</label>
+          <input name="city" type="text" required placeholder="مثال: الرياض">
+        </div>
+
+        <div class="ar-field full">
+          <button class="ar-submit" type="submit">إرسال</button>
+        </div>
+
+        <div class="ar-status" id="arFormStatus" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // ضع رابط Google Apps Script Web App هنا بعد نشره
+const AR_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxFdjwLfiYFx6evApRo3RoevsuffhEMLUPQ4CY4z1GWf1W0nwHDJN3yrLRsKyRjQvhWLA/exec";
+
+
+    const form = document.getElementById("arLeadForm");
+    const statusEl = document.getElementById("arFormStatus");
+
+    function setStatus(msg, ok=true){
+      statusEl.textContent = msg;
+      statusEl.style.color = ok ? "#d7ffe1" : "#ffd7d7";
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      setStatus("جارٍ الإرسال...");
+
+      const data = new FormData(form);
+
+      // لتفادي مشاكل CORS غالباً: استخدم mode:no-cors (لن تقرأ الاستجابة)
+      try{
+        await fetch(AR_SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          body: data
+        });
+
+        form.reset();
+        setStatus("تم الإرسال بنجاح. سنقوم بالتواصل معك قريبًا.");
+      }catch(err){
+        setStatus("تعذر الإرسال. حاول مرة أخرى لاحقًا.", false);
+      }
+    });
+
+  </script>
+</section>
